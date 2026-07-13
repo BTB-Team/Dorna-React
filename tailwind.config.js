@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#00514B',
+        primary: '#00514b',
         secondary: '#5C5C5C',
         accent: '#FDBF0F',
         black: '#000000',
@@ -26,18 +26,15 @@ module.exports = {
         'hover-gradient-white': 'linear-gradient(#ffffffa2, #99999934)',
       },
       fontFamily: {
-        milky: ['Milky Matcha', 'sans-serif'],
-        primary: ['Montserrat', 'sans-serif'],
-        secondary: ['Poppins', 'sans-serif'],
+        display: ['Montserrat-extraBold', 'sans-serif'],
+        heading: ['Montserrat-semiBold', 'sans-serif'],
+        title: ['Montserrat-bold', 'sans-serif'],
       },
       fontSize: {
-        'title': '40px',
+        'display':'64px',
+        'heading': '40px',
+        'title': '32px',
         'subtitle': '24px',
-      },
-      fontWeight: {
-        extraBold: '800',
-        medium: '500',
-        // نیازی به تعریف bold نیست چون تلویند font-bold را دارد
       },
       lineHeight: {
         'normal-custom': '100%',

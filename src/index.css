@@ -3,21 +3,40 @@
 @tailwind utilities;
 
 /* ۱. تعریف فونت اختصاصی */
-/* @font-face {
-  font-family: 'Milky Matcha';
-  src: url('../assets/Milky Matcha.otf') format('opentype');
-  font-weight: normal;
+@font-face {
+  font-family: "Montserrat-extraBold";
+  src: url("/fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+  font-weight: 800;
   font-style: normal;
-} */
+}
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("/fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Montserrat-semiBold";
+  src: url("/fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-body";
+  src: url("/fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* ۲. اعمال استایل‌های پایه روی تگ‌ها */
 @layer base {
   body {
     background-color: rgba(0, 81, 75, 0.08);
-    @apply font-primary overflow-x-hidden;
+    /* @apply overflow-x-hidden font-primary; */
   }
 
   a {
-    @apply no-underline text-black;
+    @apply text-black no-underline;
+    /* color : #ffc000; */
   }
 }
