@@ -19,8 +19,8 @@ function App() {
         
         {/* گروه اول: صفحات عمومی سایت (همراه با هدر و فوتر) */}
         <Route element={<MainLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<About />} />
           <Route path="/services" element={<Services />}/>
           <Route path="/portfolio" element={<Portfolio />}/>
           <Route path="/Contact" element={<Contact />}/>
