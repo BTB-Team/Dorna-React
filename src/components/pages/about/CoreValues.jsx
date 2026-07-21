@@ -1,5 +1,5 @@
 import GoldenDisplay from "../../typography/GoldenDisplay";
-import TitleGreen from "../../typography/TitleGreen";
+
 export default function CoreValues() {
   const values = [
     {
@@ -54,7 +54,6 @@ export default function CoreValues() {
         {/* Section Title */}
         <div className="flex items-center gap-6 mb-14">
           <GoldenDisplay text="Core Values" />
-
           <div className="flex-1 h-[2px] bg-accent opacity-80"></div>
         </div>
 
@@ -62,15 +61,12 @@ export default function CoreValues() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {values.map((value, index) => (
             <div
-            
-  key={index}
-  className="
+              key={index}
+              className="
     relative
     overflow-hidden
     h-[170px]
     rounded-[20px]
-    border
-    border-[#ECECEC]
     bg-white
     px-8
     py-7
@@ -80,27 +76,25 @@ export default function CoreValues() {
     items-center
     text-center
   "
->
-  {/* Pencil Effect */}
-  <div
-    className="
-      absolute
-      inset-0
-      rounded-[20px]
-      bg-[linear-gradient(90deg,#E8E8E8_0%,#F4F4F4_22%,#FAFAFA_45%,#FFFFFF_100%)]
-      opacity-80
-      pointer-events-none
-    "
-  />
+            >
+              <div
+                className="absolute inset-0 rounded-[20px] pointer-events-none"
+                style={{
+                  background:
+                    "linear-gradient(90deg,#F0F0F0 50%,#F7F7F7 70%,#FCFCFC 100%,#FFFFFF 30%)",
+                }}
+              />
 
-  <div className="relative z-10">
-    <TitleGreen text={value.title} />
+              <div className="relative z-10">
+                <h3 className=" text-[20px] font-semibold text-primary ">
+                  {value.title}
+                </h3>
 
-    <p className="mt-3 font-body text-[15px] leading-[30px] text-secondary">
-      {value.description}
-    </p>
-  </div>
-</div>
+                <p className="mt-3 text-[17px] leading-[28px] font-medium text-[#486868]">
+                  {value.description}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

@@ -41,12 +41,16 @@ export default function TrustedPartner() {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-[#FAFAFA] rounded-2xl p-8 shadow-sm hover:shadow-md transition duration-300"
+              className="p-6 rounded-[20px]"
+              style={{
+                background:
+                  "linear-gradient(90deg,#F0F0F0 50%,#F7F7F7 70%,#FCFCFC 100%,#FFFFFF 30%)",
+              }}
             >
               <div className="flex items-start gap-3">
                 <IoCheckmarkCircleOutline
                   className="text-[#F4B400] mt-1"
-                  size={22}
+                  size={45}
                 />
 
                 <div>
@@ -54,7 +58,7 @@ export default function TrustedPartner() {
                     {reason.title}
                   </h3>
 
-                  <p className="text-gray-600 leading-8 text-[15px]">
+                  <p className="text-[#0B5B5B] leading-8 text-[19px]">
                     {reason.description}
                   </p>
                 </div>
