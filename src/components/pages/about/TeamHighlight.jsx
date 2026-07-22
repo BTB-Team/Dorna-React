@@ -23,7 +23,7 @@ function YellowStroke() {
 export default function TeamHighlight() {
   return (
     <>
-    <section className="relative flex w-full h-full max-w-[1995px] mx-auto items-center justify-center py-16 sm:py-24 overflow-hidden">
+    <section className=" bg-white relative flex w-full h-full max-w-[1995px] mx-auto items-center justify-center py-16 sm:py-24 overflow-hidden">
           <YellowStroke />
           <DisplayGreen/>
            <div className="relative z-10 flex w-full max-w-[940px] flex-col overflow-hidden rounded-[16px] bg-[#006e67] shadow-[0_24px_50px_rgba(0,73,68,0.12)] sm:flex-row">
@@ -34,8 +34,8 @@ export default function TeamHighlight() {
             className="h-full w-full object-cover overflow-hidden rounded-lg"
           />
         </div>
-        <div className="flex min-h-[220px] flex-1 items-center sm:px-5 sm:py-5">
-          <p className="max-w-[350px] text-2xl font-semibold leading-[1.6] tracking-[0.02em] text-white sm:text-[13px] sm:leading-[1.7]">
+        <div className="flex flex-1 items-center sm:px-5 sm:py-5">
+          <p className="max-w-[310px] md:text-lg  font-semibold md:leading-7 tracking-[0.06em] text-white sm:text-[15px] sm:leading-3 px-4 py-4">
             Behind every successful project is a team driven by creativity,
             expertise, and collaboration. Together, we transform ideas into
             impactful experiences and deliver results that make a difference.

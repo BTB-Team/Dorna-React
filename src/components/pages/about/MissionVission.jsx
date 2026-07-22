@@ -1,7 +1,7 @@
 // import GoldenHeading from '../../typography/GoldenHeading';
 export default function MissionVision() {
   return (
-    <section className="bg-white py-20 px-6 md:px-16">
+    <section className="bg-white py-20 px-6 md:px-16 ">
       
 
       {/* Cards */}
@@ -9,8 +9,9 @@ export default function MissionVision() {
 
         {/* Vision Card */}
         <div
-          className="relative bg-gray-50 p-8 rounded-2xl text-left overflow-hidden bg-no-repeat bg-top bg-cover"
-          style={{ backgroundImage: "url('/images/about-images/dot-pattern.webp')" }}
+          className="relative drop-shadow-lg p-8 rounded-3xl text-left overflow-hidden bg-cover"
+          style={{ backgroundImage: "url('/images/about-images/dot-pattern.webp')", backgroundPosition:"right bottom" }}
+          
         >
           <h3 className="relative text-2xl font-bold text-[#00514B] mb-4">
             Vision
@@ -26,8 +27,8 @@ export default function MissionVision() {
 
         {/* Mission Card */}
         <div
-          className="relative bg-gray-50 p-8 rounded-2xl text-left overflow-hidden bg-no-repeat bg-top bg-cover"
-          style={{ backgroundImage: "url('/images/about-images/dot-pattern.webp')" }}
+          className="relative drop-shadow-lg p-8 rounded-3xl text-left overflow-hidden bg-cover"
+          style={{ backgroundImage: "url('/images/about-images/dot-pattern.webp')",backgroundPosition:"right bottom" }}
         >
           <h3 className="relative text-2xl font-bold text-[#00514B] mb-4">
             Mission

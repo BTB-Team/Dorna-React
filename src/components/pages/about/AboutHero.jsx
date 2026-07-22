@@ -10,7 +10,7 @@ export default function AboutHero() {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/70" />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
         <h1 className="text-5xl font-extrabold text-white loading-loose tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
