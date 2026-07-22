@@ -29,11 +29,11 @@ export default function TrustedPartner() {
       <div className="max-w-[1200px] mx-auto px-6">
         {/* Title */}
         <div className="flex items-center gap-5 mb-14">
-          <h2 className="text-[38px] font-bold text-[#F4B400] whitespace-nowrap">
+          <h2 className="text-[38px] font-bold text-[#fdba02] whitespace-nowrap ">
             Why We Are a Trusted Partner
           </h2>
 
-          <div className="flex-1 h-[2px] bg-[#F4B400]" />
+          <div className="flex-1 h-[3px] bg-[#F4B400]" />
         </div>
 
         {/* Cards */}
@@ -58,7 +58,7 @@ export default function TrustedPartner() {
                     {reason.title}
                   </h3>
 
-                  <p className="text-[#0B5B5B] leading-8 text-[19px]">
+                  <p className="text-[17px] leading-[28px] font-medium text-[#486868]">
                     {reason.description}
                   </p>
                 </div>

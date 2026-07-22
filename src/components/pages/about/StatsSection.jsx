@@ -20,17 +20,10 @@ export default function StatsSection() {
       <img
         src="/images/AboutImages/Vector7.webp"
         alt=""
-        className="absolute left-[-48px] top-[180px] w-[1536px] h-[510px] max-w-none pointer-events-none select-none"
+        className="absolute  top-[180px] w-[1536px] h-[510px]  pointer-events-none select-none"
       />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6">
-        {/* Right Decoration */}
-        {/* <img
-          src="/images/AboutImages/Vector7.webp"
-          alt=""
-          className="absolute right-[-220px] top-[-35px] w-[760px] max-w-none pointer-events-none select-none z-0"
-        /> */}
-
         {/* White Card */}
         <div className="relative mx-auto mt-12 w-[1048px] bg-white overflow-hidden">
           {/* Heading */}
@@ -50,7 +43,7 @@ export default function StatsSection() {
             {stats.map((item, index) => (
               <div
                 key={index}
-                className={`flex flex-col items-center justify-center px-8  ${
+                className={`flex flex-col items-center justify-center px-8   ${
                   index !== 2 ? "md:border-r border-[#e4ca7d]" : ""
                 }`}
               >
