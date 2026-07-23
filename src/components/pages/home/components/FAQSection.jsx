@@ -1,9 +1,9 @@
 import {useState} from "react";
-import {FiPlus, FiMinus} from "react-icons/fi";
 import Faqs from "../assets/Faqs.svg";
 import GradientHeading from "../../../typography/GradientHeading";
 import faqData from "../../../data/faqData";
-
+import charm_minus from "../assets/charm_minus.png";
+import majesticons_plus from "../assets/majesticons_plus.png";
 export default function FAQSection() {
   const [open, setOpen] = useState(-1);
   return (
@@ -24,14 +24,14 @@ export default function FAQSection() {
             const active = open === index;
             return (
               <div className="relative">
-                <div className="absolute left-0 top-0 bottom-0 w-[20px] bg-primary rounded-[15px]" />
+                <div className="absolute left-0 top-0 bottom-0 w-[25px] bg-primary rounded-[17px]" />
                 <div
                   key={index}
-                  className=" relative  ml-[4px]  bg-white rounded-[15px]  shadow-[0_12px_30px_rgba(0,0,0,0.08)] overflow-hidden "
+                  className=" relative  ml-[3px]  bg-white rounded-[14px]  shadow-[0_12px_30px_rgba(0,0,0,0.08)] overflow-hidden "
                 >
                   <div className=" w-full flex  items-start text-left">
                     {/* Content */}
-                    <div className="flex-1 px-2 md:px-6 py-3 md:py-4">
+                    <div className="flex-1 px-2 md:px-6 py-4 md:py-5">
                       <div className="flex justify-between items-start gap-10">
                         <h3 className=" font-medium text-[16px] md:text-[24px] leading-none text-black ">
                           {item.question}{" "}
@@ -40,7 +40,19 @@ export default function FAQSection() {
                           onClick={() => setOpen(active ? -1 : index)}
                           className=" text-primary text-[30px] shrink-0 leading-none"
                         >
-                          {active ? <FiMinus /> : <FiPlus />}
+                          {active ? (
+                            <img
+                              src={charm_minus}
+                              alt="Minus"
+                              className="w-10 h-10"
+                            />
+                          ) : (
+                            <img
+                              src={majesticons_plus}
+                              alt="Plus"
+                              className="w-10 h-10"
+                            />
+                          )}
                         </button>
                       </div>
                       {active && (
