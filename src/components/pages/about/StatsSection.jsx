@@ -16,7 +16,7 @@ export default function StatsSection() {
         height="561"
         viewBox="0 0 1440 561"
         fill="none"
-        className="absolute top-35 left-0 w-full h-auto rotate"
+        className="absolute top-35 left-0 w-full h-auto "
       >
         <path
           d="M-48 316.107C-48 316.107 315.5 142.607 270.5 445.107C226.082 743.692 950 188.107 1181.5 356.107C1525.16 605.5 1379.5 54.1067 1488 24.6067"
@@ -32,7 +32,7 @@ export default function StatsSection() {
         height="561"
         viewBox="0 0 1440 561"
         fill="none"
-        className="absolute left-[-50px] bottom-[40px] w-[calc(100%+60px)] -ml-13  left-0 w-full h-auto block lg:hidden"
+        className="absolute left-[-40px] bottom-[40px] w-[calc(100%+40px)]   left-0 w-full h-auto block lg:hidden"
       >
         <path
           d="M-48 316.107C-48 316.107 315.5 142.607 270.5 445.107C226.082 743.692 950 188.107 1181.5 356.107C1525.16 605.5 1379.5 54.1067 1488 24.6067"
@@ -59,13 +59,27 @@ export default function StatsSection() {
               </p>
             </div>
 
-            <Link
-              to="/contact"
-              className="flex h-[56px] sm:h-[64px] md:h-[72px] w-full sm:w-[260px] md:w-[332px] items-center justify-center rounded-[16px] sm:rounded-[20px] bg-[#FFC000] text-[18px] sm:text-[20px] md:text-[24px] font-semibold text-[#0B5B5B] transition-colors hover:bg-[#e6ad00]"
-            >
-              Elevate Your Brand
-              <span className="ml-2 sm:ml-3 text-[22px] sm:text-[26px] md:text-[28px]">→</span>
-            </Link>
+         <Link
+  to="/contact"
+  className="
+    hidden
+    lg:flex
+    h-[72px]
+    w-[332px]
+    items-center
+    justify-center
+    rounded-[20px]
+    bg-[#FFC000]
+    text-[24px]
+    font-semibold
+    text-[#0B5B5B]
+    hover:bg-[#e6ad00]
+    transition-colors
+  "
+>
+  Elevate Your Brand
+  <span className="ml-3 text-[28px]">→</span>
+</Link>
           </div>
 
           {/* Stats */}
