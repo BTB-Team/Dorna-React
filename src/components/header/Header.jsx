@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className={`mx-auto  font-heading  absolute  transition-all duration-500 z-50 flex flex-col py-3  md:py-2 justify-between md:flex-row font-accent md:h-[66px] md:rounded-[35px] md:w-[900px]  px-3 md:px-3
+      className={`font-heading  absolute top-6 left-1/2 -translate-x-1/2 transition-all duration-500 z-50 flex flex-col py-3  md:py-2 justify-between md:flex-row font-accent md:h-[66px] md:rounded-[35px] md:w-[900px]  px-3 md:px-3
         ${
           open
             ? "w-[90%] h-[calc(100vh-50px)] rounded-[30px] bg-[linear-gradient(180deg,#00514B_0%,#006964_32%,#008E88_68%,#0DB8B1_100%)] md:bg-[#00514B] md:h-[66px] md:rounded-[35px]"
