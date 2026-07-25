@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.animate-bird {
+  animation: birdFly 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+
 /* ۱. تعریف فونت اختصاصی */
 @font-face {
   font-family: "Montserrat-extraBold";
@@ -39,4 +46,12 @@
     @apply text-black no-underline;
     /* color : #ffc000; */
   }
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
