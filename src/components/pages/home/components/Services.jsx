@@ -43,7 +43,7 @@ export default function Services() {
                   md:px-6
                   border-b
                   border-primary
-                  bg-white
+                  bg-[#F7FCFC]
                   transition-all
                   duration-300
                   hover:bg-gradient-to-r
