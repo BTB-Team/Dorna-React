@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { MainLayout } from'./components/layouts/MainLayout';
 import { PrivateRoute } from'./components/layouts/PrivateRoute';
 import { Home } from './components/pages/home/Home';
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         
         {/* گروه اول: صفحات عمومی سایت (همراه با هدر و فوتر) */}
@@ -35,7 +35,7 @@ function App() {
          {/* <Route path="*" element={<NotFound />} /> */}
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
     </>
   )
