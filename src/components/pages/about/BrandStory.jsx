@@ -1,6 +1,6 @@
 import GoldenHeading from '../../typography/GoldenHeading';
 import BrandStoryImage from '/images/about-images/dorna-crane.webp';
-import rectenagle77 from '/images/about-images/Rectangle-77.svg'
+import rectangle77 from '/images/about-images/Rectangle-77.svg'
 
 
 export default function BrandStory() {
@@ -21,7 +21,7 @@ export default function BrandStory() {
               </p>
               <GoldenHeading text="the crane (Doran)" align="left" />
               <img
-                src={rectenagle77}
+                src={rectangle77}
                 alt=""
                 className="mb-4"
               />

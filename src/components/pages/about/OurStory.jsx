@@ -15,25 +15,18 @@ export default function OurStory() {
 </div>
 
       {/* content sits above the circles */}
-      <div className="relative z-10">
-        <GoldenDisplay text="our story."/>
+      <div className="relative z-10 flex flex-col">
+        <div className="order-1">
+          <GoldenDisplay text="our story."/>
+        </div>
 
-        <p className="text-[#00514B] max-w-xl mx-auto mb-4  leading-relaxed font-semibold md:text-2xl font-[Montserrat]">
+        <p className="order-2 text-[#00514B] max-w-xl mx-auto  leading-relaxed font-semibold md:text-2xl font-[Montserrat]">
           A creative agency specializing in advertising, graphic design, and
           media production in Afghanistan.
         </p>
 
-        <div className="max-w-lg mx-auto mb-12 text-justify">
-          <p className="text-[#00514B] font-medium tracking-tight text-xl font-[Montserrat]">
-            Our team transforms ideas into compelling visual experiences that
-            connect brands with their audiences. From strategy and branding
-            to content creation and production, we deliver impactful
-            solutions.
-          </p>
-        </div>
-
   {/* Images */}
-<div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mt-20 px-4">
+<div className="order-3 md:order-4 flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mt-20 px-4">
   <img
     src={TeamImage}
     alt="Team Left"
@@ -49,8 +42,25 @@ export default function OurStory() {
     alt="Team Right"
     className="order-3 w-full max-w-[361px] h-[220px] md:h-48 object-cover rounded-2xl"
   />
+  
 </div>
+
+        <div className="order-4 md:order-3 max-w-lg mx-auto mb-12 text-justify">
+          <p className="text-[#00514B] font-medium tracking-tight text-xl mt-6 font-[Montserrat]">
+            Our team transforms ideas into compelling visual experiences that
+            connect brands with their audiences. From strategy and branding
+            to content creation and production, we deliver impactful
+            solutions.
+          </p>
+        </div>
+
+
+
+
       </div>
     </section>
+
+
   );
+
 }
