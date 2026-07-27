@@ -19,7 +19,7 @@ export default function CTASection() {
             {" "}
             Let’s Get In Touch{" "}
           </h2>
-          <p className="mt-8 text-white text-[20px] leading-[38px] font-normal text-justify [text-align-last:center] md:[text-align-last:left]  md:text-left max-md:text-[16px] max-md:leading-[32px] ">
+          <p className="mt-8 text-white text-[14px] leading-[23px] md:text-[21px] md:leading-[38px] font-normal text-justify [text-align-last:center] md:[text-align-last:left]  md:text-left  ">
             We’re ready to turn your ideas into powerful digital experiences.
             Let’s start building your brand today
           </p>
