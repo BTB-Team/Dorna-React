@@ -22,11 +22,11 @@ export default function Header() {
 
   return (
     <header
-      className={`font-heading absolute left-1/2 -translate-x-1/2 top-[25px] transition-all duration-500 z-50 flex flex-col py-3 md:py-2 justify-between md:flex-row font-accent md:h-[66px] md:rounded-[35px] md:w-[900px] px-3 md:px-3
+      className={`font-heading absolute left-1/2 -translate-x-1/2 top-[25px] transition-all duration-500 z-50 flex flex-col py-3 md:py-2 justify-between md:flex-row font-accent md:h-[66px] md:rounded-[35px] md:w-[682px]  lg:w-[900px] px-3 md:px-3
         ${
           open
             ? "w-[90%] h-[calc(100vh-50px)] rounded-[30px] bg-[linear-gradient(180deg,#00514B_0%,#006964_32%,#008E88_68%,#0DB8B1_100%)] md:bg-[#00514B] md:h-[66px] md:rounded-[35px]"
-            : "w-[90%] md:w-[900px] h-[70px] md:h-[66px] bg-[#00514B] rounded-[35px] px-6 md:px-3 py-3 md:py-0 items-center flex-row"
+            : "w-[90%] md:w-[682px] lg:w-[900px] h-[70px] md:h-[66px] bg-[#00514B] rounded-[35px] px-6 md:px-3 py-3 md:py-0 items-center flex-row"
         }`}
     >
       {/* "logo" */}
@@ -150,4 +150,3 @@ export default function Header() {
     </header>
   );
 }
-
