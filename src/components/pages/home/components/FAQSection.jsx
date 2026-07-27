@@ -2,8 +2,9 @@ import {useState} from "react";
 import Faqs from "../assets/Faqs.svg";
 import GradientHeading from "../../../typography/GradientHeading";
 import faqData from "../../../data/faqData";
-import charm_minus from "../assets/charm_minus.png";
-import majesticons_plus from "../assets/majesticons_plus.png";
+import charm_minus from "../assets/charm_minus.svg";
+
+import majesticons_plus from "../assets/plus.svg";
 export default function FAQSection() {
   const [open, setOpen] = useState(-1);
   return (
@@ -16,7 +17,10 @@ export default function FAQSection() {
       <div className="w-[90%] max-w-[990px] mx-auto">
         {/* Title */}
         <div className="mb-14">
-          <GradientHeading text="Frequently Asked Questions" />
+          <h2 className="text-center font-title font-bold text-[28px] md:text-[40px] leading-[100%] tracking-normal capitalize bg-gradient-to-r from-[#073835] to-[#00B7A9] bg-clip-text text-transparent mb-md-custom">
+            Frequently <br className="md:hidden" /> Asked Questions
+          </h2>
+          {/* <GradientHeading text="Frequently Asked Questions" /> */}
         </div>
         {/* Accordion */}
         <div className="space-y-5">
@@ -44,13 +48,13 @@ export default function FAQSection() {
                             <img
                               src={charm_minus}
                               alt="Minus"
-                              className="w-10 h-10"
+                              className="h-[26px]"
                             />
                           ) : (
                             <img
                               src={majesticons_plus}
                               alt="Plus"
-                              className="w-10 h-10"
+                              className="w-6 h-6"
                             />
                           )}
                         </button>
