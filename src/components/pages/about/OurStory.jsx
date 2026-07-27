@@ -50,10 +50,6 @@ export default function OurStory() {
     className="order-3 w-full max-w-[361px] h-[220px] md:h-48 object-cover rounded-2xl"
   />
 </div>
-
-
-
-
       </div>
     </section>
   );
