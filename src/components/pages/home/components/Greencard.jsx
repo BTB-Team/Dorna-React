@@ -5,7 +5,7 @@ export default function Greencard() {
   return (
     <>
       {/* Desktop */}
-      <section className="hidden py-24 md:block">
+      <section className="hidden py-24 lg:block">
         <div className="mx-auto max-w-[1440px]">
           <div className="mx-auto flex h-[457px] w-[1200px] overflow-hidden rounded-[30px] bg-gradient-to-b from-primary to-[#00B7A9]">
             {/* Left */}
@@ -45,12 +45,16 @@ export default function Greencard() {
       </section>
 
       {/* Mobile */}
-      <section className="py-10 md:hidden">
-        <div className="mx-auto w-[343px] overflow-hidden rounded-[30px] bg-gradient-to-b from-primary to-[#00B7A9]">
+      <section className="py-10 lg:hidden">
+        <div className="mx-auto w-[343px] md:w-[90%] overflow-hidden rounded-[30px] bg-gradient-to-b
+         from-primary to-[#00B7A9]">
           <div className="px-5 pt-6">
-            <button className="flex h-[40px] w-[124px] items-center justify-center rounded-full border border-white text-[13px] font-medium text-white">
+            <Link to="/services" className="block">
+            <button className="flex h-[40px] w-[124px] items-center justify-center rounded-full border
+             border-white text-[13px] font-medium text-white">
               What We Do
             </button>
+            </Link>
 
             <h2 className="mt-6 text-[21px] font-medium leading-[132%] text-white">
               We design meaningful

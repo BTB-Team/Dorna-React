@@ -11,7 +11,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="mx-auto max-w-[1440px] h-[404px] md:h-[890px] bg-[#F7FCFC]">
+    <section className="mx-auto  h-[404px] md:h-[890px] bg-[#F7FCFC]">
       <div className="flex flex-col items-center pt-10 md:pt-[108px]">
         <h2 className="font-title bg-gradient-to-r from-primary to-[#00B7A9] bg-clip-text text-[28px] leading-none text-transparent md:text-[40px]">
           Our Services
