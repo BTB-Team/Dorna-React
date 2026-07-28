@@ -1,5 +1,5 @@
 import GoldenDisplay from '../../typography/GoldenDisplay';
-import CeoImage from '/images/about-images/ceo-image.webp';
+import CeoImage from '/images/about-images/ceo.png';
 import TeamImage from '/images/about-images/team-image.webp';
 
 export default function OurStory() {
@@ -20,7 +20,7 @@ export default function OurStory() {
           <GoldenDisplay text="our story."/>
         </div>
 
-        <p className="order-2 text-[#00514B] max-w-xl mx-auto  leading-relaxed font-semibold md:text-2xl font-[Montserrat]">
+        <p className="order-2 text-[#00514B] max-w-xl mx-auto leading-relaxed font-semibold md:text-xl font-[Montserrat-semiBold]">
           A creative agency specializing in advertising, graphic design, and
           media production in Afghanistan.
         </p>
@@ -35,7 +35,8 @@ export default function OurStory() {
   <img
     src={CeoImage}
     alt="CEO Portrait"
-    className="order-1 md:order-2 w-full max-w-[438px] h-[280px] md:h-[296px] object-cover rounded-[30px]"
+    className="order-1 md:order-2 w-full max-w-[438px] h-[296px] object-cover
+     rounded-[30px]"
   />
   <img
     src={TeamImage}
