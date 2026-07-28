@@ -5,17 +5,21 @@ import rectangle77 from "/images/about-images/Rectangle-77.svg";
 export default function BrandStory() {
   return (
     <>
-      <section className="relative w-full">
+      <section className="relative w-full bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-[500px]">
-          {/* Left Side - Text */}
+          {/* Text */}
           <div className="relative bg-white flex items-center py-10 md:py-0">
-            <div className="w-full px-6 sm:px-10 md:max-w-md md:px-16">
-              <p className="text-[#00514B] font-bold text-[18px] md:text-[24px] mb-1">
+            <div className=" text-justify w-full px-6 sm:px-10 md:ml-[120px] md:px-16">
+              <p className="text-[#00514B] font-bold text-[18px] md:text-[24px] mb-1 font-[Montserrat-semibold]">
                 Brand Story:
               </p>
-              <GoldenHeading text="the crane (Dorna)" align="left" />
+              <GoldenHeading
+                text="the crane (Dorna)"
+                align="left"
+                className="font-[Montserrat-body] "
+              />
               <img src={rectangle77} alt="" className="mb-4 w-16" />
-              <p className="text-[#00514B] leading-relaxed mb-4 text-sm md:text-base w-full text-left">
+              <p className="text-[#00514B] leading-relaxed mb-4 text-sm md:text-base w-full text-left font-[Montserrat-body]">
                 In many cultures, the crane (Dorna) symbolizes loyalty,
                 happiness, luck, longevity, and peace. The crane is a migratory
                 bird with a body similar to a stork, known for its beautiful
@@ -28,8 +32,8 @@ export default function BrandStory() {
             </div>
           </div>
 
-          {/* Right Side - Image */}
-          <div className="relative w-full h-64 sm:h-80 md:h-auto overflow-hidden rounded-2xl md:rounded-none">
+          {/* Image */}
+          <div className="relative w-full aspect-[343/382] md:aspect-auto md:h-auto overflow-hidden rounded-[30px] md:rounded-none">
             <img
               src={BrandStoryImage}
               alt="Crane Symbolism"
@@ -40,8 +44,8 @@ export default function BrandStory() {
         </div>
       </section>
 
-      <section className="bg-yellow-100 py-8 px-6 mt-12 md:px-16">
-        <p className="max-w-4xl mx-auto text-[#00514B] leading-relaxed text-base md:text-[20px] text-center md:text-left">
+      <section className="bg-yellow-100 py-6 md:py-8 px-6 md:px-16 mt-8 md:mt-12">
+        <p className="max-w-4xl mx-auto text-[#00514B] leading-relaxed text-sm sm:text-base md:text-[20px] text-left font-[Montserrat-body]">
           Just as cranes remain loyal to each other and fly together for long
           distances, we too will accompany you, focusing on steady and
           continuous progress toward your goals. Like dorna (cranes) that seek

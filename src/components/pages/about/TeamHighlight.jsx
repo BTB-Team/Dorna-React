@@ -83,7 +83,7 @@ export default function TeamHighlight() {
             />
           </div>
           <div className="flex flex-1 items-center px-4 py-5 sm:px-5 sm:py-5">
-            <p className="max-w-[310px] text-sm leading-7 font-semibold tracking-[0.03em] text-white md:text-lg md:leading-7 sm:text-[15px]">
+            <p className="max-w-[310px] text-sm leading-7 font-semibold tracking-[0.03em] text-white md:text-lg md:leading-7 sm:text-[15px] font-[Montserrat-body]">
               Behind every successful project is a team driven by creativity,
               expertise, and collaboration. Together, we transform ideas into
               impactful experiences and deliver results that make a difference.
