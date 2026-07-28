@@ -32,14 +32,16 @@ export default function Stats() {
 </div>
 
 <div className="mt-10 md:mt-20 flex justify-center">
-  <div className="flex flex-col -space-y-[29px] md:flex-row md:-space-x-4">
+  <div className="flex flex-col -space-y-[29px] md:flex-row md:items-center md:-space-x-4">
     {stats.map((item, index) => (
       <div
   key={index}
   style={{
     zIndex: stats.length - index,
   }}
-  className="relative flex h-[280px] w-[283px] items-center justify-center rounded-full"
+  className={`relative flex h-[280px] w-[283px] items-center justify-center rounded-full ${
+  index === 0 ? "md:-translate-y-3" : ""
+}`}
 >
   <img
   src={ellipse}
