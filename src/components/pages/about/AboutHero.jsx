@@ -1,5 +1,5 @@
-const HeroImage = "/images/about-images/hero-image.webp";
-const UnderlineSvg = "/images/about-images/rectangle-73.svg";
+import HeroImage from  "/images/about-images/hero-image.webp"
+import UnderlineSvg from "/images/about-images/rectangle-73.svg"
 
 export default function AboutHero() {
   return (
