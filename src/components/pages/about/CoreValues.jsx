@@ -80,8 +80,6 @@ export default function CoreValues() {
                 text-left
               "
             >
-
-           
               {/*  effect / cards*/}
               <div
                 className="
@@ -101,12 +99,12 @@ export default function CoreValues() {
               <div className="relative z-10">
                 <h3
                   className="
-                    font-heading
                     text-primary
                     text-[15px]
                     lg:text-[20px]
                     leading-tight
                     text-center
+                    font-[Montserrat-bold]
                   "
                 >
                   {value.title}
@@ -122,6 +120,7 @@ export default function CoreValues() {
                       font-medium
                       text-[#3e7979]
                       text-center
+                      font-[Montserrat-body]
                   "
                 >
                   {value.description}
