@@ -4,6 +4,9 @@ import BrandStory from "../../../components/pages/about/BrandStory";
 import MissionVission from "../../../components/pages/about/MissionVission";
 import TeamHighlight from "../../../components/pages/about/TeamHighlight";
 import Header from "../../header/Header";
+import CoreValues from "./CoreValues";
+import StatsSection from "./StatsSection";
+import TrustedPartner from "./TrustedPartner";
 
 export function About() {
   return (
@@ -14,6 +17,9 @@ export function About() {
       <BrandStory />
       <MissionVission />
       <TeamHighlight />
+      <CoreValues />
+      <StatsSection />
+      <TrustedPartner />
     </>
   );
 }

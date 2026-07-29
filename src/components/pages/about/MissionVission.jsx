@@ -1,4 +1,5 @@
-// import GoldenHeading from '../../typography/GoldenHeading';
+import DotPattern from "/images/about-images/dot-pattern.webp";
+
 export default function MissionVision() {
   return (
     <section className="bg-white py-20 px-6 md:px-16 ">
@@ -8,7 +9,7 @@ export default function MissionVision() {
         <div
           className="relative drop-shadow-lg p-8 rounded-3xl text-left overflow-hidden bg-cover"
           style={{
-            backgroundImage: "url('/images/about-images/dot-pattern.webp')",
+            backgroundImage: `url(${DotPattern})`,
             backgroundPosition: "right bottom",
           }}
         >
@@ -28,7 +29,7 @@ export default function MissionVision() {
         <div
           className="relative drop-shadow-lg p-8 rounded-3xl text-left overflow-hidden bg-cover"
           style={{
-            backgroundImage: "url('/images/about-images/dot-pattern.webp')",
+            backgroundImage: `url(${DotPattern})`,
             backgroundPosition: "right bottom",
           }}
         >
