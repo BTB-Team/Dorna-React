@@ -1,6 +1,6 @@
 import GoldenHeading from "../../typography/GoldenHeading";
-import BrandStoryImage from "/images/about-images/dorna-crane.webp";
-import rectangle77 from "/images/about-images/Rectangle-77.svg";
+import BrandStoryImage from "../about/assets/dorna-crane.webp";
+import rectangle77 from "../about/assets/Rectangle-77.svg";
 
 export default function BrandStory() {
   return (

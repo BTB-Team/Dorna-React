@@ -1,6 +1,6 @@
 import GoldenDisplay from "../../typography/GoldenDisplay";
-import CeoImage from "/images/about-images/ceo.png";
-import TeamImage from "/images/about-images/team-image.webp";
+import CeoImage from "../about/assets/ceo.png";
+import TeamImage from "../about/assets/team-image.webp";
 
 export default function OurStory() {
   return (
