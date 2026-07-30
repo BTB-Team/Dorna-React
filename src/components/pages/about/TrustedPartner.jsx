@@ -1,4 +1,4 @@
-import CharmCircleTick from "/images/about-images/charm_circle-tick.png";
+import CharmCircleTick from "../about/assets/charm_circle-tick.png";
 export default function TrustedPartner() {
   const reasons = [
     {

@@ -1,5 +1,5 @@
 
-import teamImage1 from "/images/about-images/team-image1.webp";
+import teamImage1 from "../about/assets/team-image1.webp";
 import DisplayGreen from "../../typography/DisplayGreen";
 
 function YellowStroke() {
