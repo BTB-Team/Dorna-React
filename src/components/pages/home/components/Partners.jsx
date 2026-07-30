@@ -199,10 +199,10 @@ export default function Partners() {
 
 {/* Mobile */}
       <section className="relative overflow-hidden py-10 md:hidden">
-  <div className="mx-auto w-[375px] px-4">
+  <div className="mx-auto w-full max-w-[375px]">
 
     {/* Header */}
-    <div className="mb-4 flex items-center justify-between">
+    <div className="mb-4 flex items-center justify-between px-4">
       <h2 className="w-[220px] text-[13px] font-semibold leading-none text-primary">
         Built for the way you actually flip
       </h2>
