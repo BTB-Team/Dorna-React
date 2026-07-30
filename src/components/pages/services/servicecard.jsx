@@ -25,20 +25,21 @@ export default function Services() {
       icon: 'service/commercial.svg',
       isMain: false
     },
+  
     {
       id: 4,
+      title: 'Photography',
+      desc: 'Professional studio and on-site photography services with master touch-ups and high-resolution quality.',
+      icon: 'service/Photography.svg', 
+      isMain: false
+    },
+      {
+      id: 5,
       title: 'Motion Graphics', 
       desc: 'High-end motion design and animation services including 2D and 3D solutions for modern platforms.',
       icon: 'service/motion.svg',
       isMain: false
     },
-    {
-      id: 5,
-      title: 'Photography',
-      desc: 'Professional studio and on-site photography services with master touch-ups and high-resolution quality.',
-      icon: 'service/Photography.svg', 
-      isMain: false
-    }
   ];
 
   const mainService = serviceItems.find(item => item.isMain);

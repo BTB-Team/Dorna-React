@@ -1,6 +1,6 @@
 import React from "react";
-import Servicecard from "./servicecard";
-import DeliveryProcess from "./delivery";
+import ServiCecard from "./ServiCeCard";
+import DeliveryProcess from "./Delivery";
 import CTASection from "../home/components/CTASection";
 import Header from "../../header/Header";
 
@@ -11,14 +11,11 @@ export function Services(){
               <Header />
           
             <main className="pt-28"> 
-
-                {/* بقیه کامپوننت‌ها */}
           
-                <h2>helloword</h2>
-            <Servicecard  /> 
+            <ServiCecard /> 
             <DeliveryProcess />
             <CTASection />
-              </main>
+            </main>
         </>
     )
 }
