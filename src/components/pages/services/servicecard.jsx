@@ -71,9 +71,9 @@ export default function Services() {
               
               {/* دایره‌های بسیار ظریف و کوچک شده گوشه کارت اصلی با آدرس استاندارد W3C */}
               <div className="absolute top-0 right-0 pointer-events-none z-0">
-                <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://w3.org">
-                  <circle cx="150" cy="0" r="95" fill="white" fillOpacity="0.04"/>
-                  <circle cx="150" cy="0" r="140" fill="white" fillOpacity="0.08"/>
+                <svg width="290" height="290" viewBox="0 0 290 290" fill="none" xmlns="http://w3.org">
+                  <circle cx="240" cy="0" r="110" fill="white" fillOpacity="0.04"/>
+                  <circle cx="240" cy="0" r="150" fill="white" fillOpacity="0.08"/>
                 </svg>
               </div>
               
@@ -102,9 +102,9 @@ export default function Services() {
               >
                 {/* دایره‌های کوچک و مینی‌مال منطبق با عکس نمونه شما */}
                 <div className="absolute top-0 right-0 pointer-events-none z-0">
-                  <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://w3.org">
-                    <circle cx="150" cy="0" r="125" fill="white" fillOpacity="0.35"/>
-                    <circle cx="150" cy="0" r="85" fill="white" fillOpacity="0.55"/>
+                  <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://w3.org">
+                    <circle cx="190" cy="0" r="135" fill="white" fillOpacity="0.35"/>
+                    <circle cx="190" cy="0" r="95" fill="white" fillOpacity="0.55"/>
                   </svg>
                 </div>
                 
