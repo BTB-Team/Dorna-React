@@ -1,9 +1,10 @@
-const teamImage1 = '/images/about-images/team-image1.webp';
-import DisplayGreen from '../../typography/DisplayGreen';
+
+import teamImage1 from "/images/about-images/team-image1.webp";
+import DisplayGreen from "../../typography/DisplayGreen";
 
 function YellowStroke() {
   return (
-  <svg
+    <svg
       className="absolute inset-0 w-full h-full pointer-events-none"
       viewBox="10 30 1390 591"
       fill="none"
@@ -16,35 +17,33 @@ function YellowStroke() {
         strokeWidth="51"
       />
     </svg>
-
   );
 }
 
 export default function TeamHighlight() {
   return (
     <>
-    <section className=" bg-white relative flex w-full h-full max-w-[1995px] mx-auto items-center justify-center py-16 sm:py-24 overflow-hidden">
-          <YellowStroke />
-          <DisplayGreen/>
-           <div className="relative z-10 flex w-full max-w-[940px] flex-col overflow-hidden rounded-[16px] bg-[#006e67] shadow-[0_24px_50px_rgba(0,73,68,0.12)] sm:flex-row">
-        <div className="h-[350px]  w-full shrink-0 sm:w-[62%]">
-          <img
-            src={teamImage1}
-            alt="Creative team collaborating around a table"
-            className="h-full w-full object-cover overflow-hidden rounded-lg"
-          />
+      <section className="bg-white relative flex w-full h-full max-w-[1995px] mx-auto items-center justify-center py-10 sm:py-16 md:py-24 overflow-hidden px-4 sm:px-6">
+        <YellowStroke />
+        <DisplayGreen />
+        <div className="relative z-10 flex w-full max-w-[940px] flex-col overflow-hidden rounded-[16px] bg-gradient-to-r from-[#073835] to-[rgba(0,183,169,1)] shadow-[0_24px_50px_rgba(0,73,68,0.12)] sm:flex-row">
+          <div className="h-[240px] sm:h-[280px] md:h-[350px] w-full shrink-0 sm:w-[62%]">
+            <img
+              src={teamImage1}
+              alt="Creative team collaborating around a table"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="flex flex-1 items-center px-4 py-5 sm:px-5 sm:py-5">
+            <p className="max-w-[310px] text-sm leading-7 font-semibold tracking-[0.03em] text-white md:text-lg md:leading-7 sm:text-[15px] font-[Montserrat-body]">
+              Behind every successful project is a team driven by creativity,
+              expertise, and collaboration. Together, we transform ideas into
+              impactful experiences and deliver results that make a difference.
+            </p>
+          </div>
         </div>
-        <div className="flex flex-1 items-center sm:px-5 sm:py-5">
-          <p className="max-w-[310px] md:text-lg  font-semibold md:leading-7 tracking-[0.06em] text-white sm:text-[15px] sm:leading-3 px-4 py-4">
-            Behind every successful project is a team driven by creativity,
-            expertise, and collaboration. Together, we transform ideas into
-            impactful experiences and deliver results that make a difference.
-          </p>
-        </div>
-      </div>
-          <DisplayGreen/>
-     
-    </section>
+        <DisplayGreen />
+      </section>
     </>
   );
 }
