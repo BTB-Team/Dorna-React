@@ -99,7 +99,7 @@ const DesingProject = () => {
     : projectDataِDesing;
 
   return (
-    <section id="design-project" className="relative w-full px-6 md:px-12 lg:px-[120px] pt-12">
+    <section className="relative w-full px-6 md:px-12 lg:px-[120px] pt-12">
       <div className="flex flex-col items-center justify-center">
         <h2 className=" relative text-xl md:text-3xl font-bold text-primary z-10 select-none py-3 px-8 mb-12">
           Our Desing Projects

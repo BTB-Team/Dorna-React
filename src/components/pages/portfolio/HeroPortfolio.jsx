@@ -5,12 +5,12 @@ function HeroPortfolio() {
     <div className="relative min-h-screen bg-gradient-to-b from-[#baf7ee] to-white text-[#0a3d36] font-sans p-6 md:p-12 pt-0 flex flex-col items-center">
 
       {/* Header */}
-      <div className="absolute top-8  left-0 right-0 z-50 flex justify-center">
+      <div className="absolute top-8 left-0 right-0 z-50 flex justify-center">
         <Header />
       </div>
 
       {/* Header Section */}
-      <div className="relative top-40 text-center max-w-xl mt-2 mb-0">
+      <div className="relative top-24 text-center max-w-xl mt-2 mb-0">
         <div className="inline-block mt-6">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide mb-1">
             DORNA MEDIA
@@ -24,13 +24,38 @@ function HeroPortfolio() {
 
         {/* Action Button */}
         <div className="mt-6 flex items-center justify-center">
-           <a href="../contact/Contact.jsx"><button
-            className="bg-[#04433b] hover:bg-[#03342e] text-white font-semibold py-3 px-6 rounded-xl transition-colors shadow-lg flex items-center">
+
+          <button
+            className="
+              bg-[#04433b]
+              hover:bg-[#03342e]
+              text-white
+              font-semibold
+              py-3
+              px-6
+              rounded-xl
+              transition-colors
+              shadow-lg
+              flex
+              items-center
+            "
+          >
             Start Your Project
-          </button></a>
-          
-        <a href="../contact/Contact.jsx"><span
-            className=" bg-[#f0a500] text-white p-3.5 rounded-xl ml-1 flex items-center justify-center shadow-lg">
+          </button>
+
+          <span
+            className="
+              bg-[#f0a500]
+              text-white
+              p-3.5
+              rounded-xl
+              ml-1
+              flex
+              items-center
+              justify-center
+              shadow-lg
+            "
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 transform -rotate-45"
@@ -45,8 +70,7 @@ function HeroPortfolio() {
                 d="M14 5l7 7m0 0l-7 7m7-7H3"
               />
             </svg>
-          </span></a>
-          
+          </span>
 
         </div>
       </div>
@@ -60,7 +84,7 @@ function HeroPortfolio() {
 
           <div className="rounded-2xl overflow-hidden aspect-[4/7] shadow-md">
             <img
-              src="/Dorna-React/PortfolioImage/Theet.png"
+              src="/PortfolioImage/Theet.png"
               alt="Portfolio"
               className="w-full h-full object-cover"
             />
@@ -68,7 +92,7 @@ function HeroPortfolio() {
 
           <div className="rounded-2xl overflow-hidden aspect-[4/4.5] shadow-md">
             <img
-              src="/Dorna-React/PortfolioImage/Ferecans.png"
+              src="/PortfolioImage/Ferecans.png"
               alt="Portfolio"
               className="w-full h-full object-cover"
             />
@@ -79,7 +103,7 @@ function HeroPortfolio() {
         {/* Column 2 */}
         <div className="rounded-2xl overflow-hidden aspect-[4/7] shadow-md">
           <img
-            src="/Dorna-React/PortfolioImage/Brand.png"
+            src="/PortfolioImage/Brand.png"
             alt="Portfolio"
             className="w-full h-full object-cover"
           />
@@ -93,7 +117,7 @@ function HeroPortfolio() {
           </h3>
 
           <img
-            src="/Dorna-React/PortfolioImage/Vector 10.svg"
+            src="/PortfolioImage/Vector 10.svg"
             alt=""
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           />
@@ -107,7 +131,7 @@ function HeroPortfolio() {
         {/* Column 4 */}
         <div className="rounded-2xl overflow-hidden aspect-[4/7] shadow-md">
           <img
-            src="/Dorna-React/PortfolioImage/SocialMediaB.png"
+            src="/PortfolioImage/SocialMediaB.png"
             alt="Project"
             className="w-full h-full object-cover"
           />
@@ -118,7 +142,7 @@ function HeroPortfolio() {
 
           <div className="rounded-2xl overflow-hidden aspect-[4/7] shadow-md">
             <img
-              src="/Dorna-React/PortfolioImage/WhyWebsite.png"
+              src="/PortfolioImage/WhyWebsite.png"
               alt="Project"
               className="w-full h-full object-cover"
             />
@@ -126,7 +150,7 @@ function HeroPortfolio() {
 
           <div className="rounded-2xl overflow-hidden aspect-[4/4.5] shadow-md">
             <img
-              src="/Dorna-React/PortfolioImage/Qadam.png"
+              src="/PortfolioImage/Qadam.png"
               alt="Project"
               className="w-full h-full object-cover"
             />
