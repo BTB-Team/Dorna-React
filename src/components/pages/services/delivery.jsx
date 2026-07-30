@@ -44,20 +44,25 @@ export default function DeliveryProcess() {
             
           </div>
 
-          {/* کانتینر اصلی کارت‌ها با چینش زیگزاگی در موبایل */}
-          <div className="relative z-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-8 gap-x-0 md:gap-3 max-w-[360px] mx-auto md:max-w-none">
+          {/* کانتینر اصلی کارت‌ها: تنظیم فواصل عمودی یکنواخت در موبایل (space-y-6) */}
+          <div className="relative z-10 flex flex-col space-y-6 max-w-[320px] mx-auto md:space-y-0 md:grid md:grid-cols-3 lg:grid-cols-5 md:gap-3 md:max-w-none">
             {steps.map((step, index) => {
+              // تشخیص زوج یا فرد بودن
               const isEven = index % 2 !== 0;
               
               return (
                 <div 
                   key={index} 
-                  className={`bg-white rounded-[16px] p-5 shadow-[0_12px_28px_rgba(0,0,0,0.06)] border border-gray-100/50 flex flex-col justify-between min-h-[155px] transition-transform duration-300 hover:-translate-y-1 w-[90%]
-                    ${isEven ? 'col-start-2 justify-self-end ml-[-25px]' : 'col-start-1 justify-self-start mr-[-25px]'}
-                    md:col-auto md:w-full md:mx-0 md:justify-self-auto
+                  className={`bg-white rounded-[16px] p-5 shadow-[0_12px_28px_rgba(0,0,0,0.06)] border border-gray-100/50 flex flex-col justify-between min-h-[145px] transition-transform duration-300 hover:-translate-y-1 relative
+                    w-[52%] md:w-full
+                    ${isEven ? 'self-end' : 'self-start'}
+                    md:col-auto md:mx-0 md:self-auto
                   `}
                 >
-                  <div className="w-full">
+                  {/* خط زرد لبه کارت */}
+                  <div className="absolute top-5 left-0 w-[4px] h-8 bg-[#FFC000] rounded-r" />
+
+                  <div className="w-full pl-2">
                     {/* شماره مرحله */}
                     <span className="text-[11px] font-bold text-[#FFC000] tracking-wider block mb-1">
                       {step.num}
