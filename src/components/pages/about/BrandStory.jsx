@@ -33,7 +33,7 @@ export default function BrandStory() {
           </div>
 
           {/* Image */}
-          <div className="relative w-full aspect-[343/382] md:aspect-auto md:h-auto overflow-hidden rounded-[30px] md:rounded-none">
+          <div className="relative w-[383px] h-[544px] mx-auto md:w-full spect-[343/382] md:aspect-auto md:h-auto overflow-hidden rounded-[70px] md:rounded-none">
             <img
               src={BrandStoryImage}
               alt="Crane Symbolism"
