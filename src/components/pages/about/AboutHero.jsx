@@ -13,7 +13,7 @@ export default function AboutHero() {
       <div className="absolute inset-0 bg-black/40 md:bg-black/50" />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-[Montserrat-extrabold] text-white leading-tight tracking-tight">
+        <h1 className="text-[40px] font-[Montserrat-extrabold] sm:text-5xl md:text-6xl lg:text-8xl text-white leading-tight tracking-tight">
           Crafting Digital{" "}
           <span className="relative inline-block">
             Excellence
