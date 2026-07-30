@@ -44,40 +44,42 @@ export default function Greencard() {
         </div>
       </section>
 
-      {/* Mobile */}
-      <section className="py-10 lg:hidden">
-        <div className="mx-auto w-[343px] md:w-[90%] overflow-hidden rounded-[30px] bg-gradient-to-b
-         from-primary to-[#00B7A9]">
-          <div className="px-5 pt-6">
-            <Link to="/services" className="block">
-            <button className="flex h-[40px] w-[124px] items-center justify-center rounded-full border
-             border-white text-[13px] font-medium text-white">
-              What We Do
-            </button>
-            </Link>
+     {/* Mobile + Tablet */}
+<section className="py-10 lg:hidden">
+  <div
+    className="mx-auto w-[343px] md:w-[92%] md:max-w-[760px] overflow-hidden rounded-[30px] bg-gradient-to-b from-primary to-[#00B7A9]"
+  >
+    <div className="px-5 pt-6 md:px-8 md:pt-8">
+      <Link to="/services" className="block">
+        <button
+          className="flex h-[40px] w-[124px] items-center justify-center rounded-full border border-white text-[13px] font-medium text-white md:h-[44px] md:w-[135px] md:text-[14px]"
+        >
+          What We Do
+        </button>
+      </Link>
 
-            <h2 className="mt-6 text-[21px] font-medium leading-[132%] text-white">
-              We design meaningful
-              <br />
-              not just quick
-              <br />
-              impressions
-            </h2>
+      <h2 className="mt-6 text-[21px] font-medium leading-[132%] text-white md:text-[30px]">
+        We design meaningful
+        <br />
+        not just quick
+        <br />
+        impressions
+      </h2>
 
-            <p className="mt-4 text-[13px] leading-[20px] text-white">
-              Our team transforms ideas into compelling visual experiences that
-              connect brands with their audiences. From strategy and branding to
-              content creation and production, we deliver impactful solutions.
-            </p>
-          </div>
+      <p className="mt-4 text-[13px] leading-[20px] text-white md:text-[16px] md:leading-[28px]">
+        Our team transforms ideas into compelling visual experiences that
+        connect brands with their audiences. From strategy and branding to
+        content creation and production, we deliver impactful solutions.
+      </p>
+    </div>
 
-          <img
-            src={Photo6}
-            alt="CTA"
-            className="mt-6 h-[277px] w-full rounded-b-[30px] object-cover"
-          />
-        </div>
-      </section>
+    <img
+      src={Photo6}
+      alt="CTA"
+      className="mt-6 w-full h-[277px] md:h-[360px] object-cover rounded-b-[30px]"
+    />
+  </div>
+</section>
     </>
   );
 }
