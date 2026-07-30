@@ -15,9 +15,9 @@ export function Home() {
 
       {/* بقیه سکشن‌های مربوط به شما به ترتیب زیر هم قرار می‌گیرند */}
       <Partners />
-      {/* <Stats /> */}
+      <Stats /> 
       <Services />
-      {/* <Greencard /> */}
+      <Greencard /> 
       <ClientCestion />
       <FAQSection />
       <CTASection />

@@ -11,23 +11,32 @@ export default function StatsSection() {
     <section className="relative bg-white py-16 sm:py-20 lg:py-24 overflow-hidden">
 
       {/* Desktop / Tablet Vector */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1440"
-        height="561"
-        viewBox="0 0 1440 561"
-        fill="none"
-        className="
-          absolute
-          left-0
-          w-full
-          h-auto
-          md:top-[270px]
-          lg:top-[160px]
-          pointer-events-none
-          select-none
-        "
-      >
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1440"
+  height="561"
+  viewBox="0 0 1440 561"
+  fill="none"
+className="
+  absolute
+  left-0
+  w-full
+  h-auto
+
+  md:top-[260px]
+  lg:top-[130px]
+  xl:top-[180px]
+  min-[653px]:max-[767px]:top-[260px]
+  min-[768px]:max-[769px]:top-[280px]
+  min-[850px]:max-[899px]:top-[250px]
+  min-[900px]:max-[1017px]:top-[200px]
+  min-[1018px]:max-[1024px]:top-[210px]
+  min-[1024px]:max-[1366px]:top-[260px]
+  min-[1440px]:max-[1535px]:top-[200px]
+  pointer-events-none
+  select-none
+"
+>
         <path
           d="M-48 316.107C-48 316.107 315.5 142.607 270.5 445.107C226.082 743.692 950 188.107 1181.5 356.107C1525.16 605.5 1379.5 54.1067 1488 24.6067"
           stroke="#FFC000"
@@ -43,20 +52,18 @@ export default function StatsSection() {
         height="561"
         viewBox="0 0 1440 561"
         fill="none"
-        className="
-          absolute
-          left-[-130px]
-          bottom-[-60px]
-          w-[900px]
-          md:w-[1200px]
-          max-w-none
-          block
-          lg:hidden
-          pointer-events-none
-          select-none
-          lg:hidden
-          md:hidden
-        "
+  className="
+  absolute
+  left-[-130px]
+  bottom-[-70px]
+  w-[900px]
+  max-w-none
+  block
+  md:hidden
+  pointer-events-none
+  select-none
+    min-[653px]:max-[767px]:hidden
+"
       >
         <path
           d="M-48 316.107C-48 316.107 315.5 142.607 270.5 445.107C226.082 743.692 950 188.107 1181.5 356.107C1525.16 605.5 1379.5 54.1067 1488 24.6067"
@@ -92,7 +99,7 @@ export default function StatsSection() {
             className="
               flex
               flex-col
-              lg:flex-row
+              md:flex-row
               items-start
               lg:items-center
               justify-between
@@ -142,31 +149,57 @@ export default function StatsSection() {
               </p>
 
             </div>
+<Link
+  to="/contact"
+  className="
+    hidden
+    md:flex
+    h-[60px]
+    lg:h-[72px]
 
+    w-[260px]
+    lg:w-[332px]
 
-            <Link
-              to="/contact"
-              className="
-                hidden
-                lg:flex
-                h-[72px]
-                w-[332px]
-                items-center
-                justify-center
-                rounded-[20px]
-                bg-[#FFC000]
-                text-[24px]
-                font-semibold
-                text-[#0B5B5B]
-                hover:bg-[#e6ad00]
-                transition-colors
-              "
-            >
-              Elevate Your Brand
-              <span className="ml-3 text-[28px]">
-                →
-              </span>
-            </Link>
+    shrink-0
+    items-center
+    justify-center
+
+    rounded-[16px]
+    lg:rounded-[20px]
+
+    bg-[#FFC000]
+    font-semibold
+    text-[#0B5B5B]
+
+    hover:bg-[#e6ad00]
+    transition-colors
+
+    whitespace-nowrap
+    overflow-hidden
+  "
+>
+  <span
+    className="
+      text-[16px]
+      lg:text-[24px]
+      whitespace-nowrap
+    "
+  >
+    Elevate Your Brand
+  </span>
+
+  <span
+    className="
+      ml-2
+      lg:ml-3
+      text-[22px]
+      lg:text-[28px]
+      shrink-0
+    "
+  >
+    →
+  </span>
+</Link>
 
           </div>
 

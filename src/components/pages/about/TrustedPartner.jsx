@@ -1,3 +1,4 @@
+import CharmCircleTick from "../about/assets/charm_circle-tick.png";
 export default function TrustedPartner() {
   const reasons = [
     {
@@ -73,7 +74,7 @@ export default function TrustedPartner() {
             >
               <div className="flex items-start gap-3 sm:gap-4">
                 <img
-                  src="/images/AboutImages/charm_circle-tick.png"
+                  src={CharmCircleTick}
                   alt=""
                   className="
                     w-5
@@ -119,6 +120,7 @@ export default function TrustedPartner() {
                       lg:leading-7
                       font-medium
                       text-[#3e7979]
+                      font-[Montserrat-body]
                     "
                   >
                     {reason.description}

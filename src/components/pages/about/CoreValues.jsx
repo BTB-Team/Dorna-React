@@ -53,7 +53,7 @@ export default function CoreValues() {
     <section className="bg-white py-14 sm:py-16 md:py-20 lg:py-24 mb-[-70px]">
       <div className="max-w-site mx-auto px-5 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="flex items-center gap-3 sm:gap-5 lg:gap-6 mb-8 lg:mb-14">
+        <div className="flex items-center gap-3 sm:gap-5 lg:gap-6 mb-8 lg:mb-14 fot-[Montserrat-semibold]">
           <GoldenHeading text="Core Values" />
 
           <div className="flex-1 h-[2px] bg-accent opacity-80"></div>
