@@ -1,6 +1,6 @@
 import GoldenDisplay from "../../typography/GoldenDisplay";
-import CeoImage from "/images/about-images/ceo.png";
-import TeamImage from "/images/about-images/team-image.webp";
+import CeoImage from "../about/assets/ceo.png";
+import TeamImage from "../about/assets/team-image.webp";
 
 export default function OurStory() {
   return (
@@ -15,8 +15,9 @@ export default function OurStory() {
       </div>
 
       <div className="relative z-10 flex flex-col items-center">
-        <div className="order-1 text-3xl sm:text-4xl md:text-6xl [&_h1]:text-[length:inherit] [&_h2]:text-[length:inherit]">
-          <GoldenDisplay text="our story." />
+        <div className="order-1 text-3xl sm:text-4xl md:text-6xl [&_h1]:text-[length:inherit] [&_h2]:text-[length:inherit] font-[Montsrrat-bold]">
+          <GoldenDisplay text="our story."
+          />
         </div>
 
         <p className="order-2 text-[#00514B] max-w-xl mx-auto leading-relaxed font-semibold text-base sm:text-lg md:text-xl mt-4">

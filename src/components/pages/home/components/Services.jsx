@@ -3,10 +3,26 @@ import arrowWhite from "../assets/TT.svg";
 import arrowBlack from "../assets/TB.svg";
 
 const services = [
-  { id: "01", title: "Branding Design" },
-  { id: "02", title: "Social Media Marketing" },
-  { id: "03", title: "Creative Production" },
-  { id: "04", title: "Website Development" },
+  {
+    id: "01",
+    title: "Branding Design",
+    link: "/portfolio#brand-project",
+  },
+  {
+    id: "02",
+    title: "Social Media Marketing",
+    link: "/portfolio#social-media",
+  },
+  {
+    id: "03",
+    title: "Creative Production",
+    link: "/portfolio#featured-projects",
+  },
+  {
+    id: "04",
+    title: "Website Development",
+    link: "/portfolio#design-project",
+  },
 ];
 
 export default function Services() {
@@ -27,7 +43,7 @@ export default function Services() {
           {services.map((service) => (
             <Link
               key={service.id}
-              to="/portfolio"
+              to={service.link}
               className="block"
             >
               <div

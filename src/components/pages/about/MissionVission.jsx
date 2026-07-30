@@ -1,4 +1,4 @@
-import DotPattern from "/images/about-images/dot-pattern.webp";
+import DotPattern from "../about/assets/dot-pattern.webp";
 
 export default function MissionVision() {
   return (

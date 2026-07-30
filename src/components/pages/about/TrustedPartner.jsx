@@ -1,4 +1,4 @@
-import CharmCircleTick from "/images/about-images/charm_circle-tick.png";
+import CharmCircleTick from "../about/assets/charm_circle-tick.png";
 export default function TrustedPartner() {
   const reasons = [
     {
@@ -31,14 +31,14 @@ export default function TrustedPartner() {
           {/* Small screen*/}
           <div className="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-3">
             {/* Title + line */}
-            <div className="flex items-center gap-3 sm:gap-5 lg:gap-6 flex-1">
+            <div className="flex items-center gap-3 sm:gap-5 lg:gap-6 flex-1  font-[Montserrat-bold]">
               <h2
                 className="
                   text-[20px]
                   sm:text-[28px]
                   text-accent
                   leading-tight
-                  font-[Montserrat-bold]
+                 
                 "
               >
                 Why We Are a
