@@ -12,7 +12,7 @@ export default function Hero() {
   relative mx-auto flex flex-col overflow-hidden rounded-[57px]
   bg-gradient-to-b from-primary/0 to-[#00B7A9]
 
-  h-[615px] w-[340px] px-6 pt-0
+  h-[615px] w-[100%] px-6 pt-0
 
   md:h-[760px] md:w-full md:px-12 md:pt-20
 
