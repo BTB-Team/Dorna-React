@@ -1,3 +1,4 @@
+import CharmCircleTick from "../about/assets/charm_circle-tick.png";
 export default function TrustedPartner() {
   const reasons = [
     {
@@ -30,22 +31,21 @@ export default function TrustedPartner() {
           {/* Small screen*/}
           <div className="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-3">
             {/* Title + line */}
-            <div className="flex items-center gap-3 sm:gap-5 lg:gap-6 flex-1">
+            <div className="flex items-center gap-3 sm:gap-5 lg:gap-6 flex-1  font-[Montserrat-bold]">
               <h2
                 className="
                   text-[20px]
                   sm:text-[28px]
-                  lg:text-[38px]
-                  font-display
                   text-accent
                   leading-tight
+                 
                 "
               >
                 Why We Are a
                 <span className="block lg:inline lg:ml-2 ">
                   Trusted Partner
                 </span>
-              </h2> 
+              </h2>
               <div className="flex-1 h-[3px] bg-accent -mt-5"></div>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function TrustedPartner() {
             >
               <div className="flex items-start gap-3 sm:gap-4">
                 <img
-                  src="/images/AboutImages/charm_circle-tick.png"
+                  src={CharmCircleTick}
                   alt=""
                   className="w-[26px] h-[26px] sm:w-[30px] sm:h-[30px] shrink-0"
                 />
@@ -75,9 +75,9 @@ export default function TrustedPartner() {
                       text-[20px]
                       sm:text-[21px]
                       lg:text-[22px]
-                      font-heading
                       text-[#0B5B5B]
                       mb-3
+                      font-[Montserrat-semibold]
                     "
                   >
                     {reason.title}
@@ -92,6 +92,7 @@ export default function TrustedPartner() {
                       lg:leading-[28px]
                       font-medium
                       text-[#3e7979]
+                      font-[Montserrat-body]
                     "
                   >
                     {reason.description}

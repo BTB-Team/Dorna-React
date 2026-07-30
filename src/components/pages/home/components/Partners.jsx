@@ -12,7 +12,7 @@ import img146 from "../assets/Rectangle 146.png";
 export default function Partners() {
   return (
     <>
-   <section className="relative hidden md:block mx-auto max-w-[1440px] px-6 md:px-10 py-20 overflow-hidden">
+   <section className="relative hidden lg:block mx-auto max-w-[1440px] px-6 md:px-10 py-20 overflow-hidden">
   {/* هدر بخش */}
   <div className="flex items-center justify-between max-w-[1200px] mx-auto mb-0">
     <h2 className="font-heading text-[32px] font-semibold text-primary">
@@ -94,14 +94,115 @@ export default function Partners() {
   </div>
 </section>
   
+{/* Tablet */}
+
+<section className="relative overflow-hidden hidden md:block lg:hidden py-16">
+  <div className="mx-auto w-full px-8">
+
+    {/* Header */}
+    <div className="mb-6 flex items-center justify-between">
+      <h2 className="w-[380px] text-[25px] font-semibold leading-tight text-primary">
+        Built for the way you actually flip
+      </h2>
+
+      <Link to="/portfolio">
+        <button
+          className="
+          flex
+          h-[42px]
+          w-[180px]
+          items-center
+          justify-center
+          rounded-full
+          bg-primary
+          text-[14px]
+          font-semibold
+          text-white
+          "
+        >
+          See All Our Works
+        </button>
+      </Link>
+    </div>
+
+
+    {/* Cards + Wave */}
+    <div className="relative h-[320px]">
+
+      {/* Wave */}
+      <img
+        src={wave}
+        alt="wave"
+        className="
+        pointer-events-none
+        absolute
+        left-[-120px]
+        top-[180px]
+        w-[900px]
+        h-auto
+        max-w-none
+        "
+      />
+
+
+      {/* Cards */}
+      <motion.div
+        className="relative z-10 flex gap-[14px] w-max items-center"
+        animate={{
+          x: ["0%", "-50%"],
+        }}
+        transition={{
+          duration: 50,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+      >
+        {[
+          img146,
+          img141,
+          img142,
+          img143,
+          img144,
+          img145,
+          img146,
+          img141,
+          img142,
+          img143,
+          img144,
+          img145,
+        ].map((image, index) => (
+          <div
+            key={index}
+            className="
+            h-[260px]
+            w-[210px]
+            flex-shrink-0
+            overflow-hidden
+            rounded-[14px]
+            bg-white
+            shadow-lg
+            "
+          >
+            <img
+              src={image}
+              alt={`Project ${index + 1}`}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        ))}
+      </motion.div>
+
+    </div>
+  </div>
+</section>
 
 
 {/* Mobile */}
       <section className="relative overflow-hidden py-10 md:hidden">
-  <div className="mx-auto w-[375px] px-4">
+  <div className="mx-auto w-full max-w-[375px]">
 
     {/* Header */}
-    <div className="mb-4 flex items-center justify-between">
+    <div className="mb-4 flex items-center justify-between px-4">
       <h2 className="w-[220px] text-[13px] font-semibold leading-none text-primary">
         Built for the way you actually flip
       </h2>
