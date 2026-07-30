@@ -1,67 +1,124 @@
 // ReelCard.js
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
 export default function ReelCard({ reel, onClick }) {
   const videoRef = useRef(null);
 
-  // پخش ویدیو هنگام ورود موس روی کارت
-  const handleMouseEnter = () => {
+  const handleClick = () => {
     if (videoRef.current) {
       videoRef.current.play().catch((err) => {
-        console.log("Autoplay prevented:", err);
+        console.log("Play prevented:", err);
       });
     }
-  };
 
-  // متوقف کردن و بازگرداندن ویدیو به ابتدا هنگام خروج موس
-  const handleMouseLeave = () => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
+    if (onClick) {
+      onClick();
     }
   };
 
   return (
     <div
-      onClick={onClick}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className="reel-card relative w-[300px] sm:w-[361px] h-[530px] sm:h-[642px] flex-shrink-0 rounded-3xl overflow-hidden shadow-lg group cursor-pointer bg-black snap-start transform transition-transform duration-300 active:scale-95"
+      onClick={handleClick}
+      className="
+        reel-card
+        relative
+        w-[361px]
+        h-[642px]
+        overflow-hidden
+        rounded-[32px]
+        bg-black
+        shadow-xl
+        cursor-pointer
+        group
+        snap-start
+        flex-shrink-0
+      "
     >
-      {/* Background preview - Controlled via JS Event Listeners */}
+      {/* Video */}
       <video
         ref={videoRef}
+        poster={reel.poster}
         preload="metadata"
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700 pointer-events-none"
+        controls={false}
+        className="
+          absolute
+          inset-0
+          w-full
+          h-full
+          object-cover
+          transition-transform
+          duration-500
+          ease-out
+          group-hover:scale-110
+          pointer-events-none
+        "
       >
-        <source src={reel.videoWebm} type="video/webm" />
         <source src={reel.videoMp4} type="video/mp4" />
+        <source src={reel.videoWebm} type="video/webm" />
       </video>
 
-      {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#042F24]/90 via-transparent to-black/40 pointer-events-none"></div>
+      {/* Overlay */}
+      <div
+        className="
+          absolute
+          inset-0
+          bg-gradient-to-t
+          from-[#042F24]/90
+          via-transparent
+          to-black/40
+          pointer-events-none
+        "
+      />
 
       {/* Brand */}
-      <div className="absolute top-6 left-1/2 -translate-x-1/2 text-center pointer-events-none">
-        <span className="text-yellow-500 font-extrabold tracking-widest text-sm">
+      <div
+        className="
+          absolute
+          top-7
+          left-1/2
+          -translate-x-1/2
+          text-center
+          pointer-events-none
+        "
+      >
+        <span
+          className="
+            text-yellow-500
+            font-extrabold
+            tracking-[0.25em]
+            text-sm
+          "
+        >
           {reel.brand}
         </span>
       </div>
 
-      {/* Text */}
-      <div className="absolute bottom-8 left-0 right-0 text-center px-4 pointer-events-none">
+      {/* Bottom Content */}
+      <div
+        className="
+          absolute
+          bottom-10
+          left-0
+          right-0
+          px-6
+          text-center
+          pointer-events-none
+        "
+      >
         {reel.subtitle && (
-          <p className="text-gray-300 text-sm mb-1">
+          <p className="text-gray-300 text-sm mb-2">
             {reel.subtitle}
           </p>
         )}
-        <h3 className="text-white text-xl font-bold mb-3">
+
+        <h3 className="text-white text-[28px] font-bold leading-tight">
           {reel.title}
         </h3>
-        <div className="w-20 h-[2px] bg-yellow-500 mx-auto"></div>
+
+        <div className="w-20 h-[2px] bg-yellow-500 mx-auto mt-5"></div>
       </div>
     </div>
   );

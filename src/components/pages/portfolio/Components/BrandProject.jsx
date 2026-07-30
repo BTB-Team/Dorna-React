@@ -98,7 +98,7 @@ const BrandProject = () => {
     : projectData;
 
   return (
-    <section className="relative w-full bg-white px-6 md:px-12 lg:px-[120px] pb-24">
+    <section id="brand-project" className="relative w-full bg-white px-6 md:px-12 lg:px-[120px] pb-24">
       <div className="flex flex-col items-center justify-center">
         <h2 className=" relative text-2xl md:text-3xl font-bold text-primary z-10 select-none py-4 px-2 mb-12">
           Our Branding Projects
