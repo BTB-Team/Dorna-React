@@ -16,7 +16,7 @@ export default function BrandStory() {
               <GoldenHeading
                 text="the crane (Dorna)"
                 align="left"
-                className="font-[Montserrat-body] "
+                className="font-[Montserrat-bold] "
               />
               <img src={rectangle77} alt="" className="mb-4 w-16" />
               <p className="text-[#00514B] leading-relaxed mb-4 text-sm md:text-base w-full text-left font-[Montserrat-body]">
