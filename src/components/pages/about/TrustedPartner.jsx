@@ -24,49 +24,39 @@ export default function TrustedPartner() {
   ];
 
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24">
-      <div className="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+    <section className="bg-white py-20 md:py-20 lg:py-24">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         {/* Title */}
         <div className="mb-8 lg:mb-14">
-          <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-3">
-            {/* Title + Line */}
-            <div className="flex items-center gap-3 sm:gap-5 lg:gap-6 flex-1">
+          {/* Small screen*/}
+          <div className="flex flex-col gap-1 lg:flex-row lg:items-center lg:gap-3">
+            {/* Title + line */}
+            <div className="flex items-center gap-3 sm:gap-5 lg:gap-6 flex-1  font-[Montserrat-bold]">
               <h2
                 className="
-                  text-[18px]
-                  sm:text-[22px]
-                  md:text-[28px]
-                  lg:text-[38px]
-                  xl:text-[40px]
-                  font-display
+                  text-[20px]
+                  sm:text-[28px]
                   text-accent
                   leading-tight
-                  whitespace-nowrap
+                 
                 "
               >
                 Why We Are a
-                <span className="block lg:inline lg:ml-2">
+                <span className="block lg:inline lg:ml-2 ">
                   Trusted Partner
                 </span>
               </h2>
-
-              <div className="flex-1 h-[2px] sm:h-[3px] bg-accent -mt-3 lg:mt-5 md:mt-5"></div>
+              <div className="flex-1 h-[3px] bg-accent -mt-5"></div>
             </div>
           </div>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="
-                rounded-[20px]
-                p-4
-                sm:p-5
-                md:p-6
-                lg:p-7
-              "
+              className="rounded-[20px] p-5 sm:p-6"
               style={{
                 background:
                   "linear-gradient(90deg,#F0F0F0 40%,#F7F7F7 70%,#FCFCFC 100%)",
@@ -76,33 +66,18 @@ export default function TrustedPartner() {
                 <img
                   src={CharmCircleTick}
                   alt=""
-                  className="
-                    w-5
-                    h-5
-                    sm:w-6
-                    sm:h-6
-                    md:w-7
-                    md:h-7
-                    lg:w-[30px]
-                    lg:h-[30px]
-                    shrink-0
-                    mt-1
-                  "
+                  className="w-[26px] h-[26px] sm:w-[30px] sm:h-[30px] shrink-0"
                 />
 
                 <div>
                   <h3
                     className="
-                      text-[16px]
-                      sm:text-[18px]
-                      md:text-[20px]
+                      text-[20px]
+                      sm:text-[21px]
                       lg:text-[22px]
-                      xl:text-[24px]
-                      font-heading
                       text-[#0B5B5B]
-                      mb-2
-                      sm:mb-3
-                      leading-snug
+                      mb-3
+                      font-[Montserrat-semibold]
                     "
                   >
                     {reason.title}
@@ -110,14 +85,11 @@ export default function TrustedPartner() {
 
                   <p
                     className="
-                      text-[13px]
-                      sm:text-[14px]
-                      md:text-[15px]
+                      text-[15px]
+                      sm:text-[16px]
                       lg:text-[17px]
-                      xl:text-[18px]
-                      leading-5
-                      sm:leading-6
-                      lg:leading-7
+                      leading-7
+                      lg:leading-[28px]
                       font-medium
                       text-[#3e7979]
                       font-[Montserrat-body]
