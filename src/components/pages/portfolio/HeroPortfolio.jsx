@@ -10,7 +10,7 @@ function HeroPortfolio() {
       </div>
 
       {/* Header Section */}
-      <div className="relative top-24 text-center max-w-xl mt-2 mb-0">
+      <div className="relative top-40 text-center max-w-xl mt-2 mb-0">
         <div className="inline-block mt-6">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide mb-1">
             DORNA MEDIA
