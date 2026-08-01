@@ -60,6 +60,7 @@ export default function SocialMediaReels() {
       className=" relative w-full min-h-[1000px] pb-20  bg-white overflow-hidden font-sans">
       {/* =========================
           HEADER
+
       ========================= */}
       <div
         className="
