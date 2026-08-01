@@ -1,11 +1,12 @@
 import Header from "../../Header/Header";
+import { Link } from "react-router-dom";
 
 function HeroPortfolio() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-[#baf7ee] to-white text-[#0a3d36] font-sans p-6 md:p-12 pt-0 flex flex-col items-center">
 
       {/* Header */}
-      <div className="absolute top-8 left-0 right-0 z-50 flex justify-center">
+      <div className="absolute top-8  left-0 right-0 z-50 flex justify-center">
         <Header />
       </div>
 
@@ -23,56 +24,32 @@ function HeroPortfolio() {
         </p>
 
         {/* Action Button */}
-        <div className="mt-6 flex items-center justify-center">
+       <div className="mt-6 flex items-center justify-center">
+  <Link to="/contact">
+    <button className="bg-[#04433b] hover:bg-[#03342e] text-white font-semibold py-3 px-6 rounded-xl transition-colors shadow-lg flex items-center">
+      Start Your Project
+    </button>
+  </Link>
 
-          <button
-            className="
-              bg-[#04433b]
-              hover:bg-[#03342e]
-              text-white
-              font-semibold
-              py-3
-              px-6
-              rounded-xl
-              transition-colors
-              shadow-lg
-              flex
-              items-center
-            "
-          >
-            Start Your Project
-          </button>
-
-          <span
-            className="
-              bg-[#f0a500]
-              text-white
-              p-3.5
-              rounded-xl
-              ml-1
-              flex
-              items-center
-              justify-center
-              shadow-lg
-            "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 transform -rotate-45"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={3}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
-          </span>
-
-        </div>
+  <Link to="/contact">
+    <span className="bg-[#f0a500] text-white p-3.5 rounded-xl ml-1 flex items-center justify-center shadow-lg">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5 transform -rotate-45"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={3}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M14 5l7 7m0 0l-7 7m7-7H3"
+        />
+      </svg>
+    </span>
+  </Link>
+</div>
       </div>
 
       {/* Portfolio Grid */}
@@ -84,7 +61,7 @@ function HeroPortfolio() {
 
           <div className="rounded-2xl overflow-hidden aspect-[4/7] shadow-md">
             <img
-              src="/PortfolioImage/Theet.png"
+              src="/Dorna-React/PortfolioImage/Back.webp"
               alt="Portfolio"
               className="w-full h-full object-cover"
             />
@@ -92,7 +69,7 @@ function HeroPortfolio() {
 
           <div className="rounded-2xl overflow-hidden aspect-[4/4.5] shadow-md">
             <img
-              src="/PortfolioImage/Ferecans.png"
+              src="/Dorna-React/PortfolioImage/Ferecans.webp"
               alt="Portfolio"
               className="w-full h-full object-cover"
             />
@@ -103,7 +80,7 @@ function HeroPortfolio() {
         {/* Column 2 */}
         <div className="rounded-2xl overflow-hidden aspect-[4/7] shadow-md">
           <img
-            src="/PortfolioImage/Brand.png"
+            src="/Dorna-React/PortfolioImage/Brand.webp"
             alt="Portfolio"
             className="w-full h-full object-cover"
           />
@@ -117,7 +94,7 @@ function HeroPortfolio() {
           </h3>
 
           <img
-            src="/PortfolioImage/Vector 10.svg"
+            src="/Dorna-React/PortfolioImage/Vector 10.svg"
             alt=""
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           />
@@ -131,7 +108,7 @@ function HeroPortfolio() {
         {/* Column 4 */}
         <div className="rounded-2xl overflow-hidden aspect-[4/7] shadow-md">
           <img
-            src="/PortfolioImage/SocialMediaB.png"
+            src="/Dorna-React/PortfolioImage/SocialB.webp"
             alt="Project"
             className="w-full h-full object-cover"
           />
@@ -142,7 +119,7 @@ function HeroPortfolio() {
 
           <div className="rounded-2xl overflow-hidden aspect-[4/7] shadow-md">
             <img
-              src="/PortfolioImage/WhyWebsite.png"
+              src="/Dorna-React/PortfolioImage/WhyWeb.webp"
               alt="Project"
               className="w-full h-full object-cover"
             />
@@ -150,7 +127,7 @@ function HeroPortfolio() {
 
           <div className="rounded-2xl overflow-hidden aspect-[4/4.5] shadow-md">
             <img
-              src="/PortfolioImage/Qadam.png"
+              src="/Dorna-React/PortfolioImage/Qadam.webp"
               alt="Project"
               className="w-full h-full object-cover"
             />
