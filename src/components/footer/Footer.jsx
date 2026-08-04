@@ -5,6 +5,8 @@ import X from "./assets/x.png";
 import Email from "./assets/email.png";
 import Instagram from "./assets/instagram.png";
 import {Link} from "react-router-dom";
+import {AiFillTikTok} from "react-icons/ai";
+import {FaYoutube} from "react-icons/fa";
 export function Footer() {
   return (
     <footer className="w-full bg-white  font-primary">
@@ -56,20 +58,43 @@ export function Footer() {
                 <img src={Instagram} alt="Instagram" />
               </a>
 
-              <a target="_blank" className="w-6 h-6">
+              <a
+                href="https://www.facebook.com/share/1Cn7nCTZeT/"
+                target="_blank"
+                className="w-6 h-6"
+              >
                 <img src={FaceBook} alt="Facebook" />
               </a>
 
-              <a target="_blank" className="w-6 h-6">
+              <a
+                href="https://x.com/dornamediaa"
+                target="_blank"
+                className="w-6 h-6"
+              >
                 <img src={X} alt="X" />
               </a>
 
-              <a target="_blank" className="w-6 h-6">
+              <a
+                href="https://www.linkedin.com/company/dornamediaa/"
+                target="_blank"
+                className="w-6 h-6"
+              >
                 <img src={In} alt="LinkedIn" />
               </a>
 
-              <a target="_blank" className="w-6 h-6">
-                <img src={Email} alt="Email" />
+              <a
+                href="https://www.tiktok.com/@dornamediaa?_r=1&_t=ZS-98a5zyj1VEe"
+                target="_blank"
+                className="w-6 h-6"
+              >
+                <AiFillTikTok size={21} />
+              </a>
+              <a
+                href="https://youtube.com/@dornamediaaa?si=6NI9VMXerdA1_uVs"
+                target="_blank"
+                className="w-6 h-6"
+              >
+                <FaYoutube size={21} />
               </a>
             </div>
           </div>
