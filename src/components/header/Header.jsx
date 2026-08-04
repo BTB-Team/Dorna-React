@@ -7,6 +7,8 @@ import Instagram from "./assets/instagram.png";
 import Linkdin from "./assets/linkedin.png";
 import Twitter from "./assets/twitter.png";
 import MenuIcon from "./assets/icon_menu.png";
+import {AiFillTikTok} from "react-icons/ai";
+import {FaYoutube} from "react-icons/fa";
 import Logo from "./Logo";
 
 export default function Header() {
@@ -116,14 +118,14 @@ export default function Header() {
               </a>
               <a
                 target="_blank"
-                href="#"
+                href="https://www.facebook.com/share/1Cn7nCTZeT/"
                 className="hover:opacity-80 transition-opacity text-white"
               >
                 <img src={Facebook} alt="Facebook" />
               </a>
               <a
                 target="_blank"
-                href="#"
+                href="https://x.com/dornamediaa"
                 className="hover:opacity-80 transition-opacity text-white"
               >
                 {" "}
@@ -131,17 +133,24 @@ export default function Header() {
               </a>
               <a
                 target="_blank"
-                href="#"
+                href="https://www.linkedin.com/company/dornamediaa/"
                 className="hover:opacity-80 transition-opacity text-white"
               >
                 <img src={Linkdin} alt="Linkdin" />
               </a>
               <a
                 target="_blank"
-                href="#"
+                href="https://www.tiktok.com/@dornamediaa?_r=1&_t=ZS-98a5zyj1VEe"
                 className="hover:opacity-80  transition-opacity text-white"
               >
-                <img src={Email} alt="Email" />
+                <AiFillTikTok />
+              </a>
+              <a
+                target="_blank"
+                href="https://youtube.com/@dornamediaaa?si=6NI9VMXerdA1_uVs"
+                className="hover:opacity-80  transition-opacity text-white"
+              >
+                <FaYoutube size={24} />
               </a>
             </div>
           </div>
