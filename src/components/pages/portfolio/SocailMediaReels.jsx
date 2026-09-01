@@ -62,42 +62,10 @@ export default function SocialMediaReels() {
           HEADER
 
       ========================= */}
-      <div
-        className="
-          relative
-          z-10
-           
-          max-auto
-          px-4
-          sm:px-6
-          md:px-8
-          lg:px-10
-          xl:px-12
-          pt-10
-          sm:pt-12
-          md:pt-14
-          pb-6
-        "
-      >
-        <div
-          className="
-            w-full
-            flex
-            items-center
-            justify-between
-          "
-        >
+      <div className=" relative z-10 max-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pt-10 sm:pt-12 md:pt-14 pb-6 ">
+      <div className=" w-full flex items-center justify-between">
           {/* TITLE */}
-          <h2
-            className="
-              text-[#04433b]
-              text-lg
-              sm:text-xl
-              md:text-2xl
-              lg:text-3xl
-              font-extrabold
-            "
-          >
+          <h2 className=" text-[#04433b] text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold ">
             Social Media Reels
           </h2>
 
